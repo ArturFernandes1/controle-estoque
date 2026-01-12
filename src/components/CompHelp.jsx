@@ -1,5 +1,5 @@
 import React from "react";
-import "./comp-help.scss";
+import "./CompHelp.scss";
 
 export default function HelpPage() {
   return (

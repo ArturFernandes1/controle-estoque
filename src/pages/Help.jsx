@@ -1,5 +1,5 @@
 import Navigation from "../components/Navegation";
-import HelpPage from "../components/Comp-help";
+import HelpPage from "../components/CompHelp";
 
 export default function Help() {
   return (
