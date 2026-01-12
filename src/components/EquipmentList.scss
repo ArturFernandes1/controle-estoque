@@ -1,0 +1,155 @@
+.equipment-list {
+  margin-top: 24px;
+}
+
+/* ---------- TABELA (DESKTOP) ---------- */
+.equipment-table {
+  overflow-x: auto;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+
+    tbody tr{
+      transition: background-color 0.2s ease, transform 0.1s ease;
+
+      &:hover {
+        background-color: #f1f3f5;
+      }
+    }
+
+    th {
+      background: #f1f3f5;
+      padding: 12px;
+      text-align: left;
+      font-size: 13px;
+      color: #555;
+    }
+
+    td {
+      padding: 12px;
+      border-top: 1px solid #eee;
+      font-size: 14px;
+    }
+  }
+}
+
+/* ---------- STATUS ---------- */
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+
+  &.estoque {
+    background: #d1e7dd;
+    color: #0f5132;
+  }
+
+  &.instalado {
+    background: #cff4fc;
+    color: #055160;
+  }
+
+  &.manutencao {
+    background: #fff3cd;
+    color: #664d03;
+  }
+
+  &.defeito {
+    background: #f8d7da;
+    color: #842029;
+  }
+
+  &.baixado {
+    background: #e2e3e5;
+    color: #41464b;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+.equipment-cards {
+  display: none;
+}
+
+.equipment-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  margin-bottom: 16px;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+}
+
+/* ---------- RESPONSIVO ---------- */
+@media (max-width: 768px) {
+  .equipment-table {
+    display: none;
+  }
+
+  .equipment-cards {
+    display: block;
+  }
+}
+
+/* ---------- EMPTY ---------- */
+.equipment-empty {
+  padding: 40px;
+  text-align: center;
+  color: #777;
+}
+
+/* ---------- BUTTONS ---------- */
+.actions,
+.card-actions {
+  display: flex;
+  gap: 0.5rem; /* espaçamento entre os botões */
+}
+
+.actions button,
+.card-actions button {
+  flex: 1; /* deixa os botões se ajustarem ao container */
+  padding: 0.5rem 0; /* vertical mais consistente */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  min-width: 50px; /* garante um tamanho mínimo em telas pequenas */
+  transition: background 0.2s ease;
+}
+
+.actions button:first-child,
+.card-actions button:first-child {
+  background-color: #47af4a; /* Edit - verde */
+  color: white;
+}
+
+.actions button:last-child,
+.card-actions button:last-child {
+  background-color: #e43b2f; /* Delete - vermelho */
+  color: white;
+}
+
+/* efeito hover opcional */
+.actions button:hover,
+.card-actions button:hover {
+  opacity: 0.9;
+}
+
+.actions button svg,
+.card-actions button svg {
+  font-size: 18px;
+}

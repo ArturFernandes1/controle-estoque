@@ -1,0 +1,25 @@
+.equipment-page {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: calc(100vh - 60px);
+}
+
+/* Ajustes para telas médias */
+@media (max-width: 992px) {
+  .equipment-page {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Ajustes para mobile */
+@media (max-width: 576px) {
+  .equipment-page {
+    padding: 1rem 0.75rem;
+  }
+}

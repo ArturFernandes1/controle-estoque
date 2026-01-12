@@ -1,0 +1,14 @@
+.navbar {
+  height: 70px;
+
+  .nav-link {
+    color: white !important;
+    font-size: 17px;
+    font-weight: 500;
+
+    &:hover {
+      color: #f1f1f1; // opcional: efeito hover
+      
+    }
+  }
+}
